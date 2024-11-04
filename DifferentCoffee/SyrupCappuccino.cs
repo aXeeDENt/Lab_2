@@ -1,10 +1,13 @@
- namespace OOP_Labs.Lab_2.DifferentCoffee
- {
-    public class SyrupCappuccino : Cappuccino
-    {
-        public new string name = "SyrupCappuccino";
-        SyrupType syrup;
-        public SyrupCappuccino(Intensity coffeeIntensity, int mlOfMilk, SyrupType syrup) : base(coffeeIntensity,mlOfMilk) 
-        { this.syrup = syrup;}
-    }
- }
+using System;
+public class SyrupCappuccino : Cappuccino
+{
+    public new string name = "SyrupCappuccino";
+    public SyrupType syrup;
+    public SyrupCappuccino(Intensity coffeeIntensity, SyrupType syrup) : base(coffeeIntensity) 
+    { this.syrup = syrup;}
+    public override void printCoffeeDetails()
+  {
+    base.printCoffeeDetails();
+    Console.WriteLine($"Syrup for cappuccino : {this.syrup}");
+  }
+}

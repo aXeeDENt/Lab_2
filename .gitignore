@@ -1,0 +1,97 @@
+# Ignore Visual Studio temporary files, build results, and
+# common C# files for .NET and ASP.NET projects
+
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono auto generated files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code files
+.vscode/
+
+# Rider project files
+.idea/
+*.sln.iml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotNet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio
+*.dll
+*.pdb
+*.exe
+*.app
+*.ipa
+*.dylib
+*.so
+*.rsp
+
+# Debug files
+*.ncb
+*.opt
+*.plg
+*.idb
+*.tlog
+*.log
+*.vspscc
+*.vssscc
+*.err
+*.sdf
+*.cache
+*.ilk
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.userosscache
+*.sln.docstates
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+# Uncomment if you have a NuGet repository that you don’t want to include in the project files
+# /path_to_repo/**
+
+# Windows files
+*.cache
+*.css
+*.dll
+*.exe

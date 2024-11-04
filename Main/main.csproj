@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>MainNamespace</RootNamespace>
+    <AssemblyName>MainAssembly</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\user\Documents\MyCSharpProjects\OOP_Labs\Lab_2\Coffee\*.cs" />
+  </ItemGroup>
+</Project>

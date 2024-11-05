@@ -2,9 +2,9 @@ using System;
 public class PumpkinSpiceLatte : Coffee
 {
   public new string name = "PumpkinSpiceLatte";
-  public int mlOfMilk;
+  public int mlOfMilk { get; set; } = 200;
   public int mgOfPumpkinSpice;
-  public PumpkinSpiceLatte(Intensity coffeeIntensity,  int mgOfPumpkinSpice, int mlOfMilk = 200) : base(coffeeIntensity) 
+  protected PumpkinSpiceLatte(Intensity coffeeIntensity,  int mgOfPumpkinSpice, int mlOfMilk = 200) : base(coffeeIntensity) 
   { this.mgOfPumpkinSpice = mgOfPumpkinSpice;}
   public override void printCoffeeDetails()
   {
@@ -19,7 +19,7 @@ public class PumpkinSpiceLatte : Coffee
     Console.WriteLine("Input amount of Pumpkin Spice (recommend 15-75mg)");
     string pumpkinSpiceHere = Console.ReadLine();
     if (Enum.TryParse(intensityHere, true, out Intensity intensity) 
-    && Enum.TryParse(pumpkinSpiceHere, true, out int pumpkinSpiceNew))
+    && int.TryParse(pumpkinSpiceHere, out int pumpkinSpiceNew))
     {
       Console.WriteLine($"Making a PumpkinSpiceLatte");
       PumpkinSpiceLatte pumpkinSpiceLatte = new PumpkinSpiceLatte(intensity, pumpkinSpiceNew);

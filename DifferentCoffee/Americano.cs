@@ -2,8 +2,8 @@ using System;
 public class Americano : Coffee
 {
   public new string name = "Americano";
-  public int mlofWater;
-  public Americano(Intensity coffeeIntensity, int mlofWater = 180) : base(coffeeIntensity) { }
+  public int mlofWater { get; set; } = 180;
+  protected Americano(Intensity coffeeIntensity, int mlofWater = 180) : base(coffeeIntensity) { }
   public override void printCoffeeDetails()
   {
     base.printCoffeeDetails();
